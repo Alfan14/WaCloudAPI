@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Record Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; 
+}
+.skck-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #FCF8E8; 
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    background-image:
+        url('polsek_bendo_pattern_3.png'), 
+        repeating-linear-gradient(0deg, #E0DBCF 0.5px, transparent 0.5px, transparent 8px),
+        repeating-linear-gradient(90deg, #E0DBCF 0.5px, transparent 0.5px, transparent 8px);
+   
+   background-size: 25px 12.5px, 4px 4px; 
+
+    background-repeat: repeat, repeat, repeat;
+    background-blend-mode: multiply, multiply, multiply;
+    background-position: center center;
+    
+}
+
+.polri-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    width: 70%;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.relative.z-10 {
+    position: relative;
+    z-index: 10;
+}
+
+.data-label {
+    font-weight: bold;
+    color: #333;
+}
+.data-value {
+    color: #555;
+}
+.list-lower-alpha {
+    list-style-type: lower-alpha;
+}
+    </style>
+</head>
+<body>
+
+    <div class="skck-container">
+        <img src="./lambang_polri.jpg" alt="Polri Emblem Watermark" class="polri-watermark">
+
+        <div class="relative z-10">
+            <div class="text-center mb-6">
+                <p class="text-lg font-bold">KEPOLISIAN NEGARA REPUBLIK INDONESIA</p>
+                <p class="text-md">RESOR KOTA BEKASI</p>
+                <p class="text-md">SEKTOR TARUMAJAYA</p>
+                <p class="text-sm">Jalan Raya Tarumajaya No. 8 Bekasi 17212</p>
+            </div>
+
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-xl font-bold uppercase">SURAT KETERANGAN CATATAN KEPOLISIAN</h1>
+                </div>
+                <p class="text-right text-sm">No : 09 - 0986542</p>
+            </div>
+            <p class="text-center text-lg font-bold mb-6">POLICE RECORD</p>
+            <p class="text-center text-sm mb-6">Nomor: SKCK/YANMAS/2.490/VII/2012/Sek.TJ</p>
+
+            <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-y-2">
+                <p class="col-span-full mb-2">Diterangkan bersama ini bahwa:</p>
+                <p class="col-span-full mb-4">This is to certify that:</p>
+
+                <div><span class="data-label">Nama</span></div>
+                <div><span class="data-value">: FRIED SINLAE</span></div>
+
+                <div><span class="data-label">Name</span></div>
+                <div><span class="data-value">: FRIED SINLAE</span></div>
+
+                <div><span class="data-label">Jenis Kelamin</span></div>
+                <div><span class="data-value">: Laki-laki</span></div>
+
+                <div><span class="data-label">Sex</span></div>
+                <div><span class="data-value">: Male</span></div>
+
+                <div><span class="data-label">Kebangsaan</span></div>
+                <div><span class="data-value">: Indonesia</span></div>
+
+                <div><span class="data-label">Nationality</span></div>
+                <div><span class="data-value">: Indonesia</span></div>
+
+                <div><span class="data-label">Agama</span></div>
+                <div><span class="data-value">: Islam</span></div>
+
+                <div><span class="data-label">Religion</span></div>
+                <div><span class="data-value">: Islam</span></div>
+
+                <div><span class="data-label">Tempat dan tgl. lahir</span></div>
+                <div><span class="data-value">: Jakarta, 18 Maret 1993</span></div>
+
+                <div><span class="data-label">Place and date of birth</span></div>
+                <div><span class="data-value">: Jakarta, 18 March 1993</span></div>
+
+                <div><span class="data-label">Tempat tinggal sekarang</span></div>
+                <div><span class="data-value">: Perum Griya Philips Jamsostek Blok L/18 Rt. 002/007 Ds. Setia Mulya</span></div>
+
+                <div><span class="data-label">Current address</span></div>
+                <div><span class="data-value">: Perum Griya Philips Jamsostek Blok L/18 Rt. 002/007 Ds. Setia Mulya</span></div>
+
+                <div><span class="data-label">Kec. Tarumajaya Kab. Bekasi</span></div>
+                <div><span class="data-value">: Kec. Tarumajaya Kab. Bekasi</span></div>
+
+                <div><span class="data-label">Pekerjaan</span></div>
+                <div><span class="data-value">: Karyawan</span></div>
+
+                <div><span class="data-label">Occupation</span></div>
+                <div><span class="data-value">: Employee</span></div>
+
+                <div><span class="data-label">Nomor Kartu Tanda Penduduk</span></div>
+                <div><span class="data-value">: 3216011803930001</span></div>
+
+                <div><span class="data-label">Identity card number</span></div>
+                <div><span class="data-value">: 3216011803930001</span></div>
+
+                <div><span class="data-label">Nomor Paspor/KITAS/KITAP</span></div>
+                <div><span class="data-value">: -</span></div>
+
+                <div><span class="data-label">Passport/KITAS/KITAP number</span></div>
+                <div><span class="data-value">: -</span></div>
+
+                <div><span class="data-label">Rumus sidik jari</span></div>
+                <div><span class="data-value">: 31.114 - III</span></div>
+
+                <div><span class="data-label">Fingerprints FORMULA</span></div>
+                <div><span class="data-value">: 31.114 - III</span></div>
+            </div>
+
+            <div class="mb-6">
+                <p>Setelah diadakan penelitian hingga saat dikeluarkan surat keterangan ini yang didasarkan kepada:</p>
+                <p>As of checking through the issuer hereof by virtue of:</p>
+                <ol class="list-lower-alpha ml-6">
+                    <li>Catatan Kepolisian yang ada</li>
+                    <li>Existing Police record</li>
+                    <li>Surat Keterangan dari Kepala Desa / Lurah</li>
+                    <li>Information from local Authorities</li>
+                </ol>
+                <p class="mt-4">bahwa nama tersebut diatas tidak memiliki catatan atau keterlibatan dalam kegiatan kriminal apapun.</p>
+                <p>the bearer hereof proves not to be involved in any criminal cases</p>
+                <p class="mt-4">selama ia berada di Indonesia dari <span class="data-value">18 Maret 1993</span></p>
+                <p>during his/her stay in Indonesia from <span class="data-value">18 March 1993</span></p>
+                <p>sampai dengan <span class="data-value">10 Juli 2012</span></p>
+                <p>until <span class="data-value">10 July 2012</span></p>
+            </div>
+
+            <div class="mb-6">
+                <p class="text-center italic mb-4">Keterangan ini diberikan berhubung dengan permohonan</p>
+                <p class="text-center italic mb-4">This certificate is issued at the request to the applicant</p>
+
+                <div class="grid grid-cols-2 gap-y-2">
+                    <div><span class="data-label">Untuk keperluan/menuju</span></div>
+                    <div><span class="data-value">: Persyaratan Melamar Pekerjaan</span></div>
+
+                    <div><span class="data-label">For the purpose</span></div>
+                    <div><span class="data-value">: Job Application Requirement</span></div>
+
+                    <div><span class="data-label">Berlaku dari tanggal</span></div>
+                    <div><span class="data-value">: 10 Juli 2012</span></div>
+
+                    <div><span class="data-label">Valid from</span></div>
+                    <div><span class="data-value">: 10 July 2012</span></div>
+
+                    <div><span class="data-label">Sampai dengan</span></div>
+                    <div><span class="data-value">: 10 Oktober 2012</span></div>
+
+                    <div><span class="data-label">To</span></div>
+                    <div><span class="data-value">: 10 October 2012</span></div>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-end mt-8">
+                <div>
+                    <img src="d40208a2a3e23bd99ec3e4d26ea0985f.jpg" alt="Applicant Photo" class="w-24 h-32 border border-gray-300 object-cover object-top">
+                </div>
+                <div class="text-center">
+                    <p>Dikeluarkan di : Tarumajaya</p>
+                    <p>Issued in : Tarumajaya</p>
+                    <p>Pada tanggal : 10 Juli 2012</p>
+                    <p>On : 10 July 2012</p>
+                    <p class="mt-4 font-bold">KEPALA KEPOLISIAN SEKTOR TARUMAJAYA</p>
+                    <div class="h-20 w-48 border-b-2 border-gray-400 mx-auto mt-4"></div>
+                    <p class="mt-2 text-sm">( NAMA PEJABAT )</p>
+                    <p class="text-xs">NRP. XXXXXXXXXX</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Step 2</title>
+    <style>body{font-family: sans-serif; margin: 20px;} form div{margin-bottom: 10px;} label{display: block; margin-bottom: 5px;} input{width: 250px; padding: 8px;} button{padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer;} .actions a{margin-right: 15px;}</style>
+</head>
+<body>
+    <h1>Registration - Step 2: Address Details</h1>
+    <form action="/register/step2" method="POST">
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" value="<%= formData.address || '' %>" required>
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" value="<%= formData.city || '' %>" required>
+        </div>
+        <div class="actions">
+            <button type="submit">Next</button>
+            <a href="/register/step1">Back to Step 1</a>
+        </div>
+    </form>
+</body>
+</html>
