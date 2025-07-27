@@ -17,7 +17,7 @@ cloudinary.config({
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
-router.post('/upload/images', upload.single('image'), (req, res) => {
+router.post('/upload/pdf', upload.single('pdf'), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No file uploaded' });
   }

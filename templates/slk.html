@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Keterangan Tanda Lapor Kehilangan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0; 
+        }
+        .surat-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #FCF8E8; 
+            padding: 2.5rem; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+
+            background-image:
+                repeating-linear-gradient(0deg, #E0DBCF 0.5px, transparent 0.5px, transparent 8px),
+                repeating-linear-gradient(90deg, #E0DBCF 0.5px, transparent 0.5px, transparent 8px);
+            background-size: 8px 8px; 
+            background-repeat: repeat;
+            background-blend-mode: multiply;
+            background-position: center center;
+        }
+
+        .polri-watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.08; 
+            width: 70%; 
+            height: auto;
+            z-index: 0;
+            pointer-events: none;
+            filter: grayscale(100%); 
+        }
+
+        .relative.z-10 {
+            position: relative;
+            z-index: 10;
+        }
+
+        .data-label {
+            font-weight: normal; 
+            color: #333;
+            width: 150px; 
+            display: inline-block;
+        }
+        .data-value {
+            color: #555;
+            flex-grow: 1; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="surat-container">
+        <img src="Lambang_Polri.jpg" alt="Polri Emblem Watermark" class="polri-watermark">
+
+        <div class="relative z-10">
+            <div class="text-center mb-8">
+                <p class="text-base font-bold">KEPOLISIAN NEGARA REPUBLIK INDONESIA</p>
+                <p class="text-sm">DAERAH MAGETAN</p>
+                <p class="text-sm">RESOR BENDO</p>
+                <div class="mt-4">
+                     <img src="Lambang_Polri.jpg" alt="Polri Header Emblem" class="h-16 w-16 mx-auto">
+                </div>
+            </div>
+
+            <div class="text-center mb-6">
+                <p class="text-xl font-bold uppercase tracking-wider">SURAT KETERANGAN TANDA LAPOR KEHILANGAN</p>
+                <p class="text-sm mt-1">Nomor: SKTL/1283/V/2020/RES TALA/SPKT</p>
+            </div>
+
+            <p class="mb-4 text-sm leading-relaxed">
+                <span class="inline-block align-top mr-2">-</span> Yang bertandatangan di bawah ini menerangkan bahwa pada hari ini tanggal 29 Juni 2020 sekitar jam 13.12 Wita telah datang ke SPKT POLRES TANAH LAUT, seorang laki-laki berkebangsaan WNI mengaku bernama: <span class="data-value">.......................................................................</span>
+            </p>
+
+            <div class="grid grid-cols-[150px_1fr] gap-y-1 text-sm mb-4 ml-4">
+                <div><span class="data-label">Nama</span></div>
+                <div>: <span class="data-value">TOMY INDRAWAN</span></div>
+
+                <div><span class="data-label">Tempat / Tanggal Lahir</span></div>
+                <div>: <span class="data-value">TANAH LAUT, 23 Maret 1995</span></div>
+
+                <div><span class="data-label">Agama</span></div>
+                <div>: <span class="data-value">ISLAM</span></div>
+
+                <div><span class="data-label">Pekerjaan</span></div>
+                <div>: <span class="data-value">PELAJAR/MAHASISWA</span></div>
+
+                <div><span class="data-label">Kewarganegaraan</span></div>
+                <div>: <span class="data-value">WNI</span></div>
+
+                <div><span class="data-label">Alamat</span></div>
+                <div>: <span class="data-value">JL. HM SARBINI RT. 16 RW. null, BATU AMPAR,</span></div>
+                <div></div>
+                <div><span class="data-value ml-1">: TANAH LAUT</span></div>
+
+                <div><span class="data-label">No Telp./Fax / Email</span></div>
+                <div>: <span class="data-value">082157940475</span></div>
+            </div>
+
+            <p class="mb-2 text-sm leading-relaxed">
+                <span class="inline-block align-top mr-2">-</span> Telah melaporkan tentang kehilangan / tercecer surat - surat berharga berupa: <span class="data-value">...................................................................................</span>
+            </p>
+            <ol class="list-decimal text-sm mb-4 ml-4">
+                <li>Kartu ATM Bank Kalsel - No. Rek : 007.03.01.35011.8, Pemilik an. Pelapor.</li>
+                <p class="text-sm mt-2 ml-4">-- Terjadi pada tanggal 29 Juni 2020 hilang / tercecer di Disekitaran Kecamatan Batu Ampar, Kab. Tanah Laut. --</p>
+            </ol>
+
+            <p class="mb-8 text-sm leading-relaxed">
+                <span class="inline-block align-top mr-2">-</span> Demikian Surat Keterangan Tanda Lapor Kehilangan ini dibuat untuk dipergunakan seperlunya. <span class="data-value">..................................................................................................</span>
+            </p>
+
+            <div class="flex justify-between items-start text-sm">
+                <div>
+                    <p>PELAPOR</p>
+                    <div class="mt-8 mb-2">
+                        <div class="h-12 w-40 border-b border-gray-400 mx-auto"></div>
+                    </div>
+                    <p class="font-bold">TOMY INDRAWAN</p>
+                </div>
+                <div class="text-center">
+                    <p>Pelaihari, 29 Juni 2020</p>
+                    <p>A.n. KEPALA KEPOLISIAN RESOR TANAH LAUT</p>
+                    <p>Ka.SPKT</p>
+                    <p>u.b.</p>
+                    <p>KANIT II</p>
+                    <div class="mt-8 mb-2 flex justify-center items-center">
+                        <div class="h-12 w-40 border-b border-gray-400 mx-auto"></div>
+                    </div>
+                    <p class="font-bold">HARYADI</p>
+                    <p>AJUN INSPEKTUR POLISI SATU NRP 72060317</p>
+                </div>
+            </div>
+
+            <div class="mt-8 text-xs text-gray-700">
+                <p>Catatan :</p>
+                <p>Surat ini bukan pengganti surat yang hilang akan tetapi untuk melakukan pengurusan surat yang</p>
+                <p>hilang, berlaku selama 30 hari sejak tanggal dikeluarkan.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Izin Keramaian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0; /* Light grey background for the page itself */
+        }
+        .surat-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #FCF8E8; /* A light, warm off-white, similar to original document */
+            padding: 2.5rem; /* Slightly more padding for formal document */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+
+            /* Subtle fine line pattern in background */
+            background-image:
+                repeating-linear-gradient(0deg, #E0DBCF 0.5px, transparent 0.5px, transparent 8px),
+                repeating-linear-gradient(90deg, #E0DBCF 0.5px, transparent 0.5px, transparent 8px);
+            background-size: 8px 8px; /* Control density of the lines */
+            background-repeat: repeat;
+            background-blend-mode: multiply;
+            background-position: center center;
+            /* opacity: 0.98; */ /* Adjust if the pattern is too strong */
+        }
+
+        .polri-watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.08; /* Very faded effect for watermark */
+            width: 70%; /* Adjust size */
+            height: auto;
+            z-index: 0;
+            pointer-events: none;
+            filter: grayscale(100%); /* Make watermark grayscale for more formal look */
+        }
+
+        /* Ensure content is always on top */
+        .relative.z-10 {
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-title {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .list-decimal-custom {
+            list-style-type: decimal;
+            padding-left: 1.5rem; /* Indent for list numbers */
+        }
+        .list-decimal-custom li {
+            margin-bottom: 0.5rem; /* Space between list items */
+        }
+        .data-value {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="surat-container">
+        <img src="Lambang_Polri (1).jpg" alt="Polri Emblem Watermark" class="polri-watermark">
+
+        <div class="relative z-10">
+            <div class="text-center mb-8">
+                <p class="text-base font-bold">KEPOLISIAN NEGARA REPUBLIK INDONESIA</p>
+                <p class="text-sm">DAERAH METROPOLITAN JAKARTA RAYA</p>
+                <p class="text-sm">Jl. Jend. Sudirman No. 55 Jakarta 12190</p>
+                <div class="mt-4">
+                     <img src="Lambang_Polri (1).jpg" alt="Polri Header Emblem" class="h-16 w-16 mx-auto">
+                </div>
+            </div>
+
+            <div class="flex justify-between items-end mb-4">
+                <div class="flex-grow text-center">
+                    <p class="text-xl font-bold uppercase tracking-wider">SURAT - IJIN</p>
+                    <p class="text-sm">No.Pol: SI/ YANMIN / 241 / I / 2017 / DATRO</p>
+                </div>
+                <p class="text-right text-sm font-bold ml-auto">ASLI</p>
+            </div>
+
+            <p class="section-title">Pertimbangan:</p>
+            <ol class="list-decimal-custom text-sm">
+                <li>Bahwa telah dipenuhinya segala hal yang merupakan persyaratan formal dalam penerbitan Surat Izin Kegiatan / keramaian umum.</li>
+                <li>Bahwa kegiatan yang akan dilaksanakan dipandang tidak bertentangan dengan kebijakan Pemerintah Pusat pada umumnya, serta kebijakan Pemerintah Daerah khususnya ditempat kegiatan dilaksanakan.</li>
+                <li>Bahwa kegiatan yang akan dilaksanakan itu dimungkinkan untuk tidak menimbulkan kerawanan kamtibmas, ataupun dalam lingkungan dimana kegiatan dilaksanakan.</li>
+            </ol>
+
+            <p class="section-title">Dasar:</p>
+            <ol class="list-decimal-custom text-sm">
+                <li>UU RI No. 2 Tahun 2002 tentang Kepolisian Negara RI.</li>
+                <li>Keppres No. 67 Tahun 2001 tanggal 2 Agustus 2001 tentang Perubahan atas Keputusan Presiden RI No. 54 tahun 2001 tentang Organisasi dan Tata Cara Kerja Satuan-satuan Organisasi Kepolisian Negara Republik Indonesia.</li>
+                <li>Kep. KEPALA KEPOLISIAN NEGARA RI DAN MENTERI PERTAHANAN KEAMANAN RI NOMOR KEP/139/XII/1995 dan NOMOR KEP/139/XII/1995 tentang petunjuk Pelaksanaan Perizinan sebagaimana diatur dalam Undang-undang No. 5 Tahun 1995 tentang Keamanan Polri.</li>
+                <li>Kep. Kapolri No. Pol. : JUKLAK/09/IX/1995, tanggal 29 Desember 1995 tentang Perizinan dan pemberitahuan kegiatan masyarakat.</li>
+                <li>Kep. KAPOLRI No. Pol : KEP/54/X/2002 tanggal 17 Oktober 2002 perihal Organisasi dan Tata Cara Kerja Kepolisian Daerah Metro Jaya dan Subdinas.</li>
+                <li>Peraturan Daerah Propinsi Daerah Khusus Ibukota Jakarta Nomor : 10 Tahun 2004 tentang Keramaian Umum.</li>
+                <li>Keputusan Gubernur Propinsi Daerah Khusus Ibukota Jakarta Nomor : 98 Tahun 2004 tentang Wewenang Organisasi Industri Pariwisata di Propinsi daerah khusus Ibukota Jakarta.</li>
+            </ol>
+
+            <p class="mt-6 text-sm">Memperhatikan : Segala kebijakan pemerintah yang berhubungan dengan adanya ketentuan-ketentuan per Undang-undangan yang berlaku untuk kegiatan tersebut.</p>
+
+            <p class="text-center text-lg font-bold my-8">MEMBERIKAN - IJIN</p>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-y-2 text-sm mb-8">
+                <div class="col-span-1"><span class="data-label">Kepada</span></div>
+                <div class="col-span-2"><span class="data-value">: PT. ........................</span></div>
+
+                <div class="col-span-1"><span class="data-label">Nama Organisasi</span></div>
+                <div class="col-span-2"><span class="data-value">: PT. ........................</span></div>
+
+                <div class="col-span-1"><span class="data-label">Nama Penanggung Jawab</span></div>
+                <div class="col-span-2"><span class="data-value">: Sdr. ........................</span></div>
+
+                <div class="col-span-1"><span class="data-label">Pekerjaan</span></div>
+                <div class="col-span-2"><span class="data-value">: DIREKTUR</span></div>
+
+                <div class="col-span-1"><span class="data-label">Alamat</span></div>
+                <div class="col-span-2"><span class="data-value">: Ged. Millenia, Jl. Jend. Sudirman Kav. 52-53</span></div>
+                <div class="col-span-1"></div>
+                <div class="col-span-2"><span class="data-value">Kebayoran Baru Jakarta Selatan.</span></div>
+            </div>
+
+            <div class="flex justify-end mt-8">
+                <div class="text-center text-sm">
+                    <p>Dikeluarkan di Jakarta</p>
+                    <p>Pada tanggal 10 Juli 2017</p>
+                    <p class="mt-4 font-bold">A.n. KEPALA KEPOLISIAN NEGARA REPUBLIK INDONESIA</p>
+                    <p class="font-bold">KEPALA KEPOLISIAN DAERAH METRO JAYA</p>
+                    <p class="mt-8 font-bold"> ( NAMA PEJABAT )</p>
+                    <p class="mt-1">Pangkat. Nrp. XXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="absolute bottom-4 right-4 text-xs text-gray-500">
+                1.237
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

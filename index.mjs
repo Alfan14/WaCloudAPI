@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
 dotenv.config()
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 const SESSION_SECRET = process.env.SESSION_SECRET;
 const REDIS_HOST = process.env.REDIS_HOST;
 const REDIS_PORT = parseInt(process.env.REDIS_PORT, 10);
@@ -69,6 +69,7 @@ app.get('/', (req, res) => {
 });
 
 // Session Management Routes (Multi-step Form)
+
 
 app.get('/register/step1', (req, res) => {
     const formData = req.session.formData || {};
@@ -127,7 +128,6 @@ app.post('/register/submit', (req, res) => {
 
     const finalData = req.session.formData;
 
-    console.log('--- Final Registration Data Submitted ---');
     console.log(JSON.stringify(finalData, null, 2));
     
     req.session.destroy((err) => {
@@ -172,7 +172,6 @@ app.get('/data', async (req, res) => {
         data = await getSlowData();
 
         // 3. Store in Redis with TTL (e.g., 60 seconds)
-        // Use JSON.stringify to store objects
         await redisClient.set(cacheKey, JSON.stringify(data), { EX: 60 }); 
         console.log('--- Stored data in Redis cache ---');
 

@@ -9,15 +9,13 @@
 <body>
     <h1>Registration - Confirm Details</h1>
     <% if (formData) { %>
-        <div class="data-item"><strong>Name:</strong> <%= formData.name %></div>
-        <div class="data-item"><strong>Email:</strong> <%= formData.email %></div>
-        <div class="data-item"><strong>Address:</strong> <%= formData.address %></div>
-        <div class="data-item"><strong>City:</strong> <%= formData.city %></div>
+        <div class="data-item"><strong>Name:</strong> <%= formData.applicant_name %></div>
+        <div class="data-item"><strong>Address:</strong> <%= formData.complete_address %></div>
 
         <form action="/register/submit" method="POST">
             <div class="actions">
                 <button type="submit">Confirm & Register</button>
-                <a href="/register/step2">Back to Step 2</a>
+                <a href="/register/step1">Back to Skck</a>
             </div>
         </form>
     <% } else { %>

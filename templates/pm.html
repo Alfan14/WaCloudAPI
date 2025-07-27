@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Penerimaan Laporan / Pengaduan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0; /
+        }
+        .surat-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #FCF8E8; 
+            padding: 2.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+
+            background-image:
+                repeating-linear-gradient(0deg, #E0DBCF 0.5px, transparent 0.5px, transparent 8px),
+                repeating-linear-gradient(90deg, #E0DBCF 0.5px, transparent 0.5px, transparent 8px);
+            background-size: 8px 8px; 
+            background-repeat: repeat;
+            background-blend-mode: multiply;
+            background-position: center center;
+        }
+
+        .polri-watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.08; 
+            width: 70%; 
+            height: auto;
+            z-index: 0;
+            pointer-events: none;
+            filter: grayscale(100%); 
+        }
+
+        .relative.z-10 {
+            position: relative;
+            z-index: 10;
+        }
+
+        .data-label {
+            font-weight: normal; 
+            color: #333;
+            width: 150px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .data-value {
+            color: #555;
+            flex-grow: 1; 
+            word-wrap: break-word;
+        }
+        .indent-first-line::first-line {
+            text-indent: 2rem; 
+        }
+        .detail-row {
+            display: flex;
+            align-items: baseline; 
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="surat-container">
+        <img src="Lambang_Polri.jpg" alt="Polri Emblem Watermark" class="polri-watermark">
+
+        <div class="relative z-10">
+            <div class="flex justify-between items-start mb-6">
+                <div class="text-left">
+                    <p class="text-base font-bold">KEPOLISIAN NEGARA REPUBLIK INDONESIA</p>
+                    <p class="text-sm">DAERAH JAWA TIMUR</p>
+                    <p class="text-sm">SEKTOR BENDO</p>
+                    <p class="text-xs">Gorang Gareng , Jl. Raya Bendo No.209, Dusun Bendo, Belotan, Kec. Magetan, Kabupaten Magetan, Jawa Timur</p>
+                </div>
+                <div class="text-right text-xs">
+                    <p>Model B-1</p>
+                </div>
+            </div>
+
+            <div class="text-center mb-6">
+                <img src="Lambang_Polri.jpg" alt="Polri Header Emblem" class="h-16 w-16 mx-auto">
+            </div>
+
+            <div class="text-center mb-6">
+                <p class="text-xl font-bold uppercase tracking-wider">SURAT PENERIMAAN LAPORAN / PENGADUAN</p>
+                <p class="text-sm mt-1">NOMOR POLISI : STPL/04/X/2022 SPK</p>
+            </div>
+
+            <p class="mb-4 text-sm leading-relaxed">
+                Yang bertanda tangan dibawah ini menerangkan bahwa pada hari Rabu tanggal 05 Oktober 2022 sekitar Jam 10.00. telah datang ke Polsek Kedung Waringin seorang Warga Indonesia mengaku.
+            </p>
+
+            <div class="text-sm mb-4">
+                <div class="detail-row">
+                    <span class="data-label">Nama</span>
+                    <span>: <span class="data-value">YEMIMA SUSANTO</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="data-label">Tempat Tgl Lahir</span>
+                    <span>: <span class="data-value">Karawang, 06 April 1992</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="data-label">Agama</span>
+                    <span>: <span class="data-value">Islam</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="data-label">Suku/Bangsa</span>
+                    <span>: <span class="data-value">Indonesia</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="data-label">Pekerjaan</span>
+                    <span>: <span class="data-value">Wiraswasta</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="data-label">Alamat</span>
+                    <span>: <span class="data-value">Perum Bumi Waringin Indah Blok B.10 No.28 RT.006</span></span>
+                </div>
+                <div class="detail-row ml-[150px]">
+                    <span class="data-value">RW.007 Waringinjaya Kedung Waringin Bekasi</span>
+                </div>
+            </div>
+
+            <p class="mb-2 text-sm">Berdasarkan Laporan Polisi No. Pol : 708/K/X/2022/Sek Karsa</p>
+            <div class="text-sm mb-4 ml-4">
+                <div class="detail-row">
+                    <span class="data-label">Pada tanggal</span>
+                    <span>: <span class="data-value">05-Okt-2022 Jam 10.00 WIB</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="data-label">Melaporkan Tentang</span>
+                    <span>: <span class="data-value">Penipuan dan Hack Aplikasi Kredivo</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="data-label"></span>
+                    <span>: <span class="data-value">Tindak Pidana Penipuan Online dan Hack Aplikasi Kredivo yang dilakukan oleh orang yang tidak diketahui identitasnya. Awal kejadian korban mendapat telepon dan whatsapp mengaku dari pihak Kredivo menginformasikan korban mendapat hadiah. Dalam percakapan tersebut korban disuruh memasukkan petunjuk pelaku dan korban memberikan kode OTP sms dari kredivo dan pin login perbaikan aplikasi Kredivo kemudian diarahkan untuk mengaktifkan Fitur Pinjaman Tunai di Aplikasi Kredivo. Korban merasa tertipu karena setelah percakapan dengan pelaku, ternyata ada tagihan pinjaman dari Aplikasi Kredivo. Kejadian dilaporkan ke Polsek Kedung Waringin.</span></span>
+                </div>
+                 <div class="detail-row">
+                    <span class="data-label">Tanggal Kejadian</span>
+                    <span>: <span class="data-value">12-Nov-2021 Jam 14.00 WIB</span></span>
+                </div>
+                 <div class="detail-row">
+                    <span class="data-label">Tempat Kejadian</span>
+                    <span>: <span class="data-value">Rumah</span></span>
+                </div>
+                 <div class="detail-row">
+                    <span class="data-label">Atas Kejadian</span>
+                    <span>: <span class="data-value">Pelapor</span></span>
+                </div>
+                 <div class="detail-row">
+                    <span class="data-label">Alamat</span>
+                    <span>: <span class="data-value">Tersebut diatas</span></span>
+                </div>
+                 <div class="detail-row">
+                    <span class="data-label">Kerugian</span>
+                    <span>: <span class="data-value">.........................................</span></span>
+                </div>
+            </div>
+
+            <p class="mb-8 text-sm leading-relaxed">
+                Surat Tanda Penerimaan Laporan / Pengaduan ini di perlukan untuk : Penyelidikan <br>
+                Demikian surat keterangan tanda penerimaan laporan/pengaduan ini agar dapat di pergunakan seperlunya.
+            </p>
+
+            <div class="flex justify-between items-start text-sm mt-8">
+                <div>
+                    <p class="font-bold">PELAPOR</p>
+                    <div class="mt-12 mb-2">
+                        <div class="h-12 w-40 border-b border-gray-400 mx-auto"></div>
+                    </div>
+                    <p class="font-bold text-base">YEMIMA SUSANTO</p>
+                </div>
+                <div class="text-center">
+                    <p>KEPALA KEPOLISIAN SEKTOR KEDUNGWARINGIN</p>
+                    <div class="mt-8 mb-2 flex justify-center items-center">
+                        <div class="h-12 w-40 border-b border-gray-400 mx-auto"></div>
+                    </div>
+                    <p class="font-bold">MAMAT ROKHMAT S.H., M.H</p>
+                    <p>AJUN KOMISARIS BESAR POLISI NRP 69070344</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

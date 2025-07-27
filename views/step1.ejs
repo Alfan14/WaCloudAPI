@@ -7,15 +7,35 @@
     <style>body{font-family: sans-serif; margin: 20px;} form div{margin-bottom: 10px;} label{display: block; margin-bottom: 5px;} input{width: 250px; padding: 8px;} button{padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer;}</style>
 </head>
 <body>
-    <h1>Registration - Step 1: Basic Info</h1>
+    <h1>Registration - SKCK</h1>
     <form action="/register/step1" method="POST">
         <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" value="<%= formData.name || '' %>" required>
+            <label for="applicant_name">Name:</label>
+            <input type="text" id="applicant_name" applicant_name="applicant_name" value="<%= formData.applicant_name || '' %>" required>
+        </div>
+         <div>
+            <label for="place_date_birth">Tempat Tanggal Lahir:</label>
+            <input type="text" id="place_date_birth" place_date_birth="place_date_birth" value="<%= formData.place_date_birth || '' %>" required>
+        </div>
+         <div>
+            <label for="complete_address">Alamat Lengkap:</label>
+            <input type="text" id="complete_address" complete_address="complete_address" value="<%= formData.complete_address || '' %>" required>
+        </div>
+         <div>
+            <label for="needs">Kebutuhan:</label>
+            <input type="text" id="needs" needs="needs" value="<%= formData.needs || '' %>" required>
+        </div>
+         <div>
+            <label for="id_number">NIK:</label>
+            <input type="text" id="id_number" id_number="id_number" value="<%= formData.id_number || '' %>" required>
+        </div>
+         <div>            
+            <label for="submission_date">Tanggal Pengajuan:</label>
+            <input type="date" id="submission_date" submission_date="submission_date" value="<%= formData.submission_date || '' %>" required>
         </div>
         <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" value="<%= formData.email || '' %>" required>
+            <label for="passport_photo">passport_photo:</label>
+            <input type="file" accept="image/*" id="passport_photo" name="passport_photo" value="<%= formData.passport_photo || '' %>" required>
         </div>
         <button type="submit">Next</button>
     </form>
